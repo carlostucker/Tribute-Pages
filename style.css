@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  font-family: "PT Serif", serif;
+}
+
+:root {
+  --text-color-primary: black;
+  --text-color-secondary: white;
+  --main-bg-color: white;
+  --main-color-1: #371bb1;
+  --main-color-2: #05f4b7;
+  --main-color-3: #12151f;
+  --main-table-border: #371bb1;
+}
+
+body {
+  background: url(https://media.giphy.com/media/YZy40LNzXey5kD4Miw/giphy.gif);
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.page-container {
+  color: var(--text-color-primary);
+  margin: 0 auto;
+  width: 90%;
+}
+
+header {
+  text-align: center;
+  background: var(--main-color-2);
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.title {
+  /* letter-spacing: 5px; */
+}
+
+.subheading {
+  color: var(--main-color-1);
+  font-style: italic;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+
+.timeline {
+  flex: 60%;
+  display: flex;
+  background: var(--main-color-2);
+  flex-wrap: wrap;
+  border-bottom: 2px solid var(--main-table-border);
+}
+
+.timeline__heading {
+  text-align: center;
+  flex: 100%;
+  margin: 5px;
+}
+
+.timeline__date,
+.timeline__desc {
+  border-top: 2px solid var(--main-table-border);
+  padding: 10px;
+}
+
+.timeline__date {
+  flex: 10%;
+  background: var(--main-color-2);
+  font-weight: bold;
+}
+
+.timeline__desc {
+  flex: 90%;
+}
+
+/*OVERVIEW*/
+
+.overview {
+  flex: 20%;
+  display: flex;
+  align-self: flex-start;
+  flex-wrap: wrap;
+  background: var(--main-color-2);
+}
+
+.overview__title {
+  flex: 100%;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.overview__image {
+  flex: 100%;
+  height: 300px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.overview__heading,
+.overview__info {
+  padding: 10px 10px;
+  border-top: 2px solid var(--main-table-border);
+}
+
+.overview__heading {
+  font-weight: bold;
+  flex: 30%;
+}
+
+.overview__info {
+  flex: 70%;
+}
+
+footer {
+  margin-top: 20px;
+  background: var(--main-color-2);
+  padding: 5px;
+  text-align: center;
+}
+
+.quote {
+  border-left: 10px solid var(--main-color-1);
+  padding-left: 10px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.quote__details {
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.quote__author {
+  text-align: center;
+  color: #371bb1;
+}
+
+@media only screen and (max-width: 800px) {
+  .main-content {
+    flex-direction: column;
+  }
+}
